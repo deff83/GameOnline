@@ -14,6 +14,8 @@ var mouseY;
 var isDrag;
 var isDragDiv;
 
+var home;
+var typeHome;
 
 var player;
 var name_login;
@@ -38,6 +40,12 @@ function init(){
 	autoAjax = true;
 	interval = 6000;
 	isDownlodGame = false;
+	//////////////////////////////GET HOME/////////////////
+		home = document.getElementById("HomeObj");
+		typeHome = 1;
+		ajaxPOST('../game/getHome.php', 'type='+typeHome+'', callback_getHome);
+		
+	////////////////////////////////////////////////////
 	
 	playeers_map = new Map();
 	ajaxPOST('../game/infostart.php', 'name='+name_login, callback_infostart);
@@ -202,6 +210,19 @@ class Playeer{
 	}
 }
 
+function mouseOverHome(){
+	console.log("mouseOverHome");
+	typeHome = 2;
+	ajaxPOST('../game/getHome.php', 'type='+2+'', callback_getHome);
+}
+function mouseOutHome(){
+	console.log("mouseOutHome");
+	typeHome = 1;
+	ajaxPOST('../game/getHome.php', 'type='+1+'', callback_getHome);
+}
+function homeClick(){
+	alert("Home");
+}
 
 
 function callback_coord(text){
@@ -257,6 +278,22 @@ function callback_infostart(text){
 	}
 }
 
-
+function callback_getHome(text){
+	console.log(text);
+	var divHome = document.createElement("div");
+		divHome.className = "HomeObj";
+		divHome.innerHTML = text;
+		home.innerHTML = "";
+		if (typeHome == 1) {
+			divHome.addEventListener("mouseover", mouseOverHome, true); 
+		}
+		
+		if (typeHome == 2) {divHome.addEventListener("mouseout", mouseOutHome, true);
+					
+		}
+		divHome.onclick = homeClick;
+		home.appendChild(divHome);
+	
+}
 	
 	///////////////////////////////////////////
