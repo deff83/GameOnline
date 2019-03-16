@@ -2,10 +2,9 @@
 <html>
 <head>
   <title></title>
-  <link rel="stylesheet" type="text/css" href="newHome.css">
+  <link rel="stylesheet" type="text/css" href="../object/Home/css/newHomeTree.css">
 </head>
 <body>
-  <div class="derevoHome">
   <div class="home">
     <div class="cube"></div>
     <div class="cube1"></div>
@@ -24,8 +23,6 @@
         <div class="trojkat_bg1"></div>
       </div>
     </div>
-    
-  </div>
-</div>
+    </div>
 </body>
 </html>

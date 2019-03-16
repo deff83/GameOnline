@@ -129,6 +129,36 @@
 				</div>
 			</div>
 			<div class="text">
+				<input class="hide" id="hd-6" type="checkbox" >
+				<label for="hd-6">PAYEER.COM</label>
+				<div class="scrit"><a href="https://payeer.com/ru/account/" target="_blank">https://payeer.com</a>
+				 <hr>
+				<div class="obsh textmin">
+					<div class="namecrypt">
+						<div>PAYEER</div>
+						<div>BTC:</div>
+						<div>ETH:</div>
+						<div>BCH:</div>
+						<div>LTC:</div>
+						<div>DASH:</div>
+						
+					</div>
+					  
+					  <div>
+						<div><b>P72111902</b></div>
+						<div><b>3AEVzuaLHZ9Wyb54FHkvK2bp1MzHfh8hJA</b></div>
+						<div><b>0x40750F5b2ab226712eAAA2b0Ee0cD2a231796Cb5</b></div>
+						<div><b>bitcoincash:qp2ysgxz9a0nw3c09rleegezlmkf9ey9vqf9lf3q7p</b></div>
+						<div><b>LSGkvbQYBEAXEDnA8AZXJAEmLAaGLaWyMZ</b></div>
+						<div><b>XefvyGWmTzNYmWTj8YHWVSxA16uRs17SRd</b></div>
+						<hr>
+					</div>
+						
+					  </div>
+					  
+				</div>
+			</div>
+			<div class="text">
 				<input class="hide" id="hd-1" type="checkbox" >
 				<label for="hd-1">micropot (adBCH, adLTC, adETH, adDOGE)</label>
 				<div class="scrit"><a href="https://micropot.cc" target="_blank">https://micropot.cc</a>

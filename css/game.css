@@ -1,3 +1,29 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+.panel {
+	margin: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	width: 950px;
+	background-image: url('../object/chat/1.png');
+	background-repeat: no-repeat;
+	height: 137px;
+	padding: 12px 0px 0px 12px;
+	margin: 70% auto;
+}
+
+.chat {
+margin: 0px;
+padding: 0px;
+width: 50%;
+height: 90px;
+background: #fbfbfb;
+box-shadow: 0 3px #ccc;
+border-radius: 4px;
+}
 
 .pole {
   transform-style: preserve-3d;
@@ -71,4 +97,9 @@
 
 	z-index: 10;
 }
-
+.home {
+    position: absolute;
+    left: 370px;
+    top: 100px;
+    z-index: 3;
+}

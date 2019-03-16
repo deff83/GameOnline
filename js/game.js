@@ -205,7 +205,7 @@ class Playeer{
 
 
 function callback_coord(text){
-	//console.log(text);
+	console.log(text);
 	//
 	var objJson = JSON.parse(text);
 	/*	{"code":0,"code_message":"SUCCESS","name":"deff83","coord":

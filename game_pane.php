@@ -15,6 +15,9 @@
 				<div class="right_ground side"></div>
 				<div class="top_ground side"></div>
 			</div>
+        <?php
+   include "object/Home/newHome.php"
+ ?>
 		</div>
 	<div id = "infotext" class="infotext">test</div>
 	<input type='hidden' name='login' id='name_login' value='<?php 
@@ -22,6 +25,16 @@
 		
 		echo $login;
 	?>'>
+		<div class="panel">
+			<div class="chat">
+				<p class="chat-messager">Evgen:</p>
+				<p class="chat-message">если что,я ещё не доделал не ругайтесь плз</p>
+			</div>
+			<div class="chat-form">
+				<textarea></textarea>
+				<button><button>
+			</div>
+		</div>
 	</div>
 	<script src = "js/ajax.js"></script>
 	<script src = "js/game.js"></script>
